@@ -34,4 +34,9 @@ class FizzBuzzServiceTest {
         assertEquals("FizzBuzz", service.singleValue(15));
     }
 
+    @Test
+    public void singleValueResponseNumber() {
+        assertEquals("7", service.singleValue(7));
+    }
+
 }
