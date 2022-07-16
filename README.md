@@ -1,4 +1,4 @@
-# fizz-buzz-challenge
+# [fizz-buzz-challenge](https://codingdojo.org/kata/FizzBuzz/)
 Challenge complete for class in college
 
 
