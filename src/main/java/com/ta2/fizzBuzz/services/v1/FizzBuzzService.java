@@ -2,6 +2,9 @@ package com.ta2.fizzBuzz.services.v1;
 
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class FizzBuzzService {
     public String singleValue(Integer value) {
@@ -17,5 +20,13 @@ public class FizzBuzzService {
             return value.toString();
         }
 
+    }
+
+    public List<String> ListValues(List<Integer> lista) {
+        List<String> response = new ArrayList<>();
+        lista.forEach(value -> {
+            response.add(this.singleValue(value));
+        });
+        return response;
     }
 }
